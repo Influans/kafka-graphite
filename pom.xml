@@ -16,11 +16,11 @@
   </prerequisites>
 
   <dependencies>
-    <dependency>
+   <dependency>
       <groupId>org.apache.kafka</groupId>
       <artifactId>kafka_2.10</artifactId>
-      <version>0.8.1.1</version>
-    </dependency>
+    <version>0.8.2.0-cp</version>
+   </dependency>
     <dependency>
       <groupId>com.yammer.metrics</groupId>
       <artifactId>metrics-graphite</artifactId>
@@ -120,6 +120,13 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <repositories>
+    <repository>
+      <id>confluent</id>
+      <url>http://packages.confluent.io/maven/</url>
+    </repository>
+  </repositories>
 
   <distributionManagement>
     <repository>
